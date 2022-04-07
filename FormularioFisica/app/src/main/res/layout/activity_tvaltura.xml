@@ -1,0 +1,168 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animationCache="false"
+    android:background="@color/black">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:background="@color/white"
+        android:id="@+id/entrada"
+        android:outlineAmbientShadowColor="@color/black"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Datos conocidos"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:layout_margin="5sp"
+            android:id="@+id/titulo1"
+            />
+
+
+        <TextView
+            android:id="@+id/tvaltura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Altura:  "
+            android:textSize="20dp"
+            android:layout_margin="5sp"
+            android:layout_below="@+id/titulo1"
+            />
+
+        <EditText
+            android:id="@+id/etaltura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvaltura"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_marginBottom="5sp"
+            android:hint="Altura m"
+            android:inputType="number"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvvelocidadi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Velocidad inicial"
+            android:textSize="20dp"
+            android:layout_margin="5sp"
+            android:layout_below="@+id/etaltura"
+            />
+
+        <EditText
+            android:id="@+id/etvelocidadi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvvelocidadi"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_marginBottom="5sp"
+            android:hint="V.Inicial m/s"
+            android:inputType="number"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvgravedad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gravedad"
+            android:textSize="20dp"
+            android:layout_margin="5sp"
+            android:layout_below="@+id/etvelocidadi"
+            />
+
+        <TextView
+            android:id="@+id/etgravedad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvgravedad"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_marginBottom="5sp"
+            android:hint="-9.81 m/s²"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btncalcular"
+            android:layout_width="62dp"
+            android:layout_height="52dp"
+            android:layout_below="@+id/tvgravedad"
+            android:layout_marginLeft="132dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/etgravedad"
+            android:drawableBottom="@drawable/icon_result" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:background="@color/white"
+        android:id="@+id/salida"
+        android:layout_below="@+id/entrada"
+        android:outlineAmbientShadowColor="@color/black"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultados"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:layout_margin="5sp"
+            android:id="@+id/titulo2"
+            />
+
+        <TextView
+            android:id="@+id/tvresultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titulo2"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_marginBottom="5sp"
+            android:hint="Resultado"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/etResultado"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvresultado"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_marginBottom="5sp"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnlimpiar"
+            android:layout_width="62dp"
+            android:layout_height="52dp"
+            android:layout_below="@+id/tvresultado"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/etResultado"
+            android:drawableBottom="@drawable/icon_limpiar" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animationCache="false"
+    android:background="@color/white"
+    android:backgroundTint="@color/black">
+
+    <RelativeLayout
+        android:id="@+id/entrada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:outlineAmbientShadowColor="@color/black">
+
+        <TextView
+            android:id="@+id/titulo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_marginBottom="5sp"
+            android:text="Datos conocidos"
+            android:textAlignment="center"
+            android:textSize="30dp" />
+
+
+        <TextView
+            android:id="@+id/distancia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titulo1"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_marginBottom="5sp"
+            android:text="Distancia"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/etDistancia"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/distancia"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_marginBottom="5sp"
+            android:hint="Distancia m"
+            android:inputType="number"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tiempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etDistancia"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_marginBottom="5sp"
+            android:text="Tiempo:  "
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/etTiempo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tiempo"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_marginBottom="5sp"
+            android:hint="Tiempo s"
+            android:inputType="number"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/velocidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etTiempo"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_marginBottom="5sp"
+            android:text="Velocidad:  "
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/etVelocidad"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/velocidad"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_marginBottom="5sp"
+            android:hint="Velocidad m/s"
+            android:inputType="number"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/velocidad"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/etVelocidad"
+            android:text="Calcular" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/salida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/entrada"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:outlineAmbientShadowColor="@color/black">
+
+        <TextView
+            android:id="@+id/titulo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:text="Resultados"
+            android:textAlignment="center"
+            android:textSize="30dp" />
+
+
+        <TextView
+            android:id="@+id/formdes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titulo2"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_marginBottom="5sp"
+            android:text="Resultado"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/etResultado"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/formdes"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_marginBottom="5sp"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/formdes"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/etResultado"
+            android:text="Limpiar" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.formulariofisica">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_principal"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FormularioFisica">
+        <activity
+            android:name=".Menu"
+            android:exported="false"
+            android:label="Menu Principal"/>
+        <activity
+            android:name=".TVTiempo"
+            android:exported="false"
+            android:label="Tiro Vertical: Tiempo"/>
+        <activity
+            android:name=".TVAltura"
+            android:exported="false"
+            android:label="Tiro Vertical: Altura"/>
+        <activity
+            android:name=".TiroVertical"
+            android:exported="false"
+            android:label="Tiro vertical"/>
+        <activity
+            android:name=".CaidaLibre"
+            android:exported="false"
+            android:label="Caida Libre"/>
+        <activity
+            android:name=".VelocidadFinal"
+            android:exported="false"
+            android:label="MRUA: Velocidad sin tiempo"/>
+        <activity
+            android:name=".Distancia"
+            android:exported="false"
+            android:label="MRUA: Distancia sin Aceleracion"/>
+        <activity
+            android:name=".VelocidadPromedio"
+            android:exported="false"
+            android:label="MRUA: Velocidad Promedio"/>
+        <activity
+            android:name=".Aceleracion"
+            android:exported="false"
+            android:label="MRUA: Aceleracion"/>
+        <activity
+            android:name=".MRU"
+            android:exported="false"
+            android:label="MRU"/>
+        <activity
+            android:name=".MRUA"
+            android:exported="false"
+            android:label="MRUA: Menu"/>
+        <activity
+            android:name=".Inicio"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
